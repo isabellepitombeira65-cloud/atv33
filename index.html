@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Estágios - Divulgação de Vagas</title>
+    <!-- Ligação ao ficheiro CSS separado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>Portal de Estágios <span>UniVagas</span></h1>
+            <p>Divulgue ou encontre oportunidades de estágio de forma simples e rápida[cite: 3].</p>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- Secção do Formulário de Cadastro -->
+        <section class="form-section">
+            <h2>Cadastrar Nova Vaga de Estágio[cite: 3]</h2>
+            <form id="vagaForm">
+                <div class="input-group">
+                    <label for="titulo">Título da Vaga:</label>
+                    <input type="text" id="titulo" placeholder="Ex: Estagiário de Desenvolvimento Web" required>
+                </div>
+                <div class="input-group">
+                    <label for="empresa">Empresa:</label>
+                    <input type="text" id="empresa" placeholder="Ex: Tech Solutions" required>
+                </div>
+                <div class="input-group">
+                    <label for="local">Localidade:</label>
+                    <input type="text" id="local" placeholder="Ex: Remoto / Lisboa" required>
+                </div>
+                <div class="input-group">
+                    <label for="contacto">Contacto / E-mail:</label>
+                    <input type="text" id="contacto" placeholder="Ex: rh@techsolutions.com" required>
+                </div>
+                <button type="submit" class="btn">Publicar Vaga</button>
+            </form>
+        </section>
+
+        <!-- Secção da Tabela de Divulgação -->
+        <section class="table-section">
+            <h2>Vagas Disponíveis[cite: 3]</h2>
+            <div class="table-responsive">
+                <table id="tabelaVagas">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Empresa</th>
+                            <th>Local</th>
+                            <th>Contacto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- As vagas inseridas pelo formulário aparecem aqui automaticamente[cite: 3] -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Portal UniVagas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Ligação ao ficheiro JavaScript separado -->
+    <script src="script.js"></script>
+
+</body>
+</html>
